@@ -1,4 +1,3 @@
-import React from 'react';
 import './Home.css';
 import Content from "../../components/Content/Content";
 import ToggleParagraph from "../../components/ToggleParagraph/ToggleParagraph";
