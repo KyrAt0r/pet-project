@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {BrowserRouter as Router} from 'react-router-dom';
 
+import Header from "../../pet-project/src/components/Header/Header";
+import MainMenu from "../../pet-project/src/components/MainMenu/MainMenu";
+import Footer from "../../pet-project/src/components/Footer/Footer";
+import logo from '../../pet-project/src/assets/logoMimic.gif';
+import './styles.css';
+import Routes from "../../pet-project/src/components/Routes";
 function App() {
-  const [count, setCount] = useState(0)
+    const menuItems = [ // Обёрнуто в JSON обьект для передачи в пропсыы
+        {title: 'Главная', link: '/', id: '0'},
+        {title: 'Новости', link: '/news', id: '1'},
+        {title: 'О нас', link: '/about', id: '2'},
+        {title: 'Контакты', link: '/functional', id: '3'},
+        {title: 'Посты', link: '/feed', id: '4'},
+    ];
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <Router>
+            <div className="App">
+                <Header logoSrc={logo} siteName="ИПР React + TypeScript"/>
+                <MainMenu menuItems={menuItems}/>
+                <Routes/>
+                <Footer/>
+            </div>
+        </Router>
+    );
 }
-
 export default App
