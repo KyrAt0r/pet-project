@@ -4,8 +4,8 @@ import {
 } from 'react-router-dom';
 import FunctionalComponent from './FunctionalComponent/FunctionalComponent';
 import Authorization from "./Authorization/Authorization";
-import Home from "../../../react-ipr_2023/src/Pages/Home/Home";
 import Posts from "./Posts/Posts";
+import Home from "../Pages/Home/Home.tsx";
 
 const Routes = () => {
     return (

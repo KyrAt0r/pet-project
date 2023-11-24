@@ -1,0 +1,156 @@
+button {
+    background-color: #0084ff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    transition: background-color 0.2ms ease-in-out;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+
+button:active {
+    background-color: #005cbf;
+    outline: none;
+    box-shadow: -2px 1px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2ms ease-in-out, box-shadow 0.2ms ease-in-out;
+}
+
+.my-button-warning {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    transition: background-color 0.2ms ease-in-out;
+}
+
+.my-button-warning:hover {
+    background-color: #ce1919;
+}
+
+.my-button-warning:active {
+    background-color: #ad0000;
+    outline: none;
+    box-shadow: -2px 1px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2ms ease-in-out, box-shadow 0.2ms ease-in-out;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    min-width: 200px;
+    max-height: 600px;
+    max-width: 350px;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow 0.2s ease-in-out;
+    align-items: center;
+    margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 16px;
+    text-align: center;
+}
+
+.card__image {
+    height: 60%;
+    object-fit: cover;
+    width: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    padding: 0 20px;
+}
+
+.card__caption {
+    font-size: 14px;
+    margin: 8px 16px;
+    text-align: center;
+}
+
+.card__description {
+    flex: 1;
+    font-size: 16px;
+    margin: 16px;
+    overflow: auto;
+}
+
+.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme .my-button {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-theme .my-button:hover {
+    background-color: #888;
+}
+
+.dark-theme .my-button:active {
+    background-color: #333;
+}
+
+.dark-theme .my-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5), -4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.input-label {
+    margin-bottom: 8px;
+}
+
+.input-field {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.input-field--error {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+.input-field--error:focus {
+    outline: none;
+    border-color: #dc3545;
+}
+
+.input-error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
