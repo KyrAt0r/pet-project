@@ -13,10 +13,11 @@ function App() {
         {title: 'О нас', link: '/about', id: '2'},
         {title: 'Контакты', link: '/functional', id: '3'},
         {title: 'Посты', link: '/feed', id: '4'},
+        {title: 'Unix Конвертер', link: '/unix-conv', id: '5'}
     ];
 
     return (
-        <Router>
+        <Router basename={import.meta.env.BASE_URL}>
             <div className="App">
                 <Header logoSrc={logo} siteName="ИПР React + TypeScript"/>
                 <MainMenu menuItems={menuItems}/>
