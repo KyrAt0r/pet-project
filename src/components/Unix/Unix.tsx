@@ -3,7 +3,7 @@ import {useState, ChangeEvent} from 'react';
 import {format, utcToZonedTime} from 'date-fns-tz';
 import './UnixStyles.css';
 
-export const Unix: React.FC = () => {
+export default function Unix() {
     const [unixDate, setUnixDate] = useState<string>('');
     const [localDate, setLocalDate] = useState<string | null>(null);
     const [customTimeZoneDate, setCustomTimeZoneDate] = useState<string | null>(null);
@@ -53,4 +53,4 @@ export const Unix: React.FC = () => {
             </table>
         </div>
     );
-};
+}

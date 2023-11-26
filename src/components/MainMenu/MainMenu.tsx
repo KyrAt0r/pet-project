@@ -15,7 +15,7 @@ class MainMenu extends Component<IMenuProps> {
                         <li key={item.id} className="menu__item">
                             <NavLink
                                 exact
-                                to={`${import.meta.env.BASE_URL}${item.link}`}
+                                to={item.link}
                                 className="menu__link"
                                 activeClassName="active"
                             >
